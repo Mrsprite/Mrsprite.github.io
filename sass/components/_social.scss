@@ -1,0 +1,99 @@
+.social{
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  height: 150px;
+  max-width: 1200px;
+  text-align: center;
+  @media (min-width:460px) and (max-width: 999px){
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    height: auto;
+    max-width: 1200px;
+    text-align: center;
+    height: 150px;
+  }
+  @media (min-width: 1000px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    height: auto;
+    max-width: 1200px;
+    text-align: center;
+      height: 150px;
+  }
+}
+.socialconteiner{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  @media (min-width:460px) and (max-width: 999px){
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+  }
+  @media (min-width: 1000px) {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+  }
+}
+.socialconteiner ul{
+width: 100%;
+height: auto;
+list-style: none;
+}
+.socialconteiner li{
+  width: 12%;
+  height: 40px;
+  display: inline-block;
+  margin: 0 4px 0 3px;
+  border-radius: 50%;
+  border: 3px white solid;
+  transition: all 1s;
+  box-shadow: 0 0 0 0 #D07C7C;
+   color: #848282;
+   @media (min-width:460px) and (max-width: 999px){
+     width: 10%;
+     height: 55px;
+     display: inline-block;
+     margin: 0 5px 0 5px;
+     border-radius: 50%;
+     border: 3px white solid;
+     transition: all 1s;
+     box-shadow: 0 0 0 0 #D07C7C;
+      color: #848282;
+   }
+   @media (min-width: 1000px) {
+     width: 6%;
+     height: 55px;
+     display: inline-block;
+     margin: 0 10px 0 10px;
+     border-radius: 50%;
+     border: 3px white solid;
+     transition: all 1s;
+     box-shadow: 0 0 0 0 #D07C7C;
+      color: #848282;
+   }
+}
+.socialconteiner li:hover{
+  box-shadow: 0 0 0 3px #D07C7C;
+  background: #D07C7C;
+  color: white;
+}
+.socialconteiner li i{
+  font-size: 18px;
+  margin-top: 10px;
+  @media (min-width:460px) and (max-width: 999px){
+    font-size: 24px;
+    margin-top: 14px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+}

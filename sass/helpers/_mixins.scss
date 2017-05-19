@@ -1,0 +1,29 @@
+@mixin przejscie($czas, $typ) {
+  -webkit-transition: all $czas $typ;
+  -moz-transition: all $czas $typ;
+  -ms-transition: all $czas $typ;
+  -o-transition: all $czas $typ;
+  transition: all $czas $typ;
+}
+
+// Media queries breakpoints
+@mixin mobile {
+  @media (min-width: #{$mobile_width})
+  and (max-width: #{$tablet-width - 1px}) {
+    @content;
+
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width})
+  and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

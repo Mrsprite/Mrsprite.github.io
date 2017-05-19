@@ -1,0 +1,75 @@
+.loadmore{
+  width: 100%;
+  height: auto;
+  text-align: center;
+    clear: both;
+  }
+.loadmore input{
+  background: #d07c7c;
+  border: 2px solid #d07c7c;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  width: 40%;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+    @media (min-width:462px) and (max-width: 999px){
+      width: 35%;
+      height: 40px;
+    }
+    @media (min-width: 1000px) {
+      width: 12%;
+      height: 40px;
+    }
+}
+.twoinput input{
+  width: 95%;
+  margin: 10px 0 0 0;
+  height: 35px;
+  border:  1px solid #e37e7e;
+  padding: 5px 0 5px 20px;
+  font-family: 'Open Sans', sans-serif;
+  @media (min-width:460px) and (max-width: 999px) {
+      margin: 10px;
+      width: 90%;
+  }
+  @media (min-width: 1000px) {
+      margin: 10px;
+      width: 100%;
+  }
+}
+.textarea textarea{
+  width: 95%;
+  margin: 10px 0 0 0;
+  padding: 5px 0 5px 20px;
+  border:  1px solid #e37e7e;
+  height: 150px;
+  resize:none;
+  @media (min-width:460px) and (max-width: 999px) {
+      margin: 10px;
+      width: 90%;
+  }
+  @media (min-width: 1000px) {
+      margin: 10px;
+      width: 100%;
+  }
+}
+.buttonandtext button{
+  float: right;
+  width: 32%;
+  height: auto;
+  padding: 10px;
+  background: #d07c7c;
+  border: 1px solid #d07c7c;
+  color: white;
+  margin: 20px 0 0 0px;
+  font-family: 'Open Sans', sans-serif;
+  @media (min-width:460px) and (max-width: 999px) {
+  margin: 20px 0 0 0px;
+  width: 17%;
+  }
+  @media (min-width: 1000px) {
+  margin: 20px 0 0 0px;
+  width: 17%;
+  }
+}

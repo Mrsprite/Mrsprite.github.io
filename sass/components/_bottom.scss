@@ -1,0 +1,124 @@
+.bottom {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+
+
+
+.measengebox,{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  @media (min-width:460px) and (max-width: 999px) {
+    width: 100%;
+  }
+  @media (min-width: 1000px) {
+    width: 60%;
+
+  }
+}
+.twoinput,.textarea{
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  @media (min-width:460px) and (max-width: 999px) {
+    width: 70%;
+  }
+  @media (min-width: 1000px) {
+    width: 90%;
+
+  }
+}
+.buttonandtext{
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  @media (min-width:460px) and (max-width: 999px) {
+  width: 65%;
+
+  }
+  @media (min-width: 1000px) {
+  width: 97%;
+
+  }
+}
+.footer{
+  clear: both;
+  width: 90%;
+  height: 100px;
+  margin:0 auto;
+}
+.footertext{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  @media (min-width:460px) and (max-width: 999px) {
+    width: 30%;
+  }
+  @media (min-width: 1000px) {
+    width: 20%;
+  }
+}
+.footerlegal{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.dotsdiv{
+  width: 90%;
+  height: 250px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 20px;
+}
+.dots{
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+}
+.dots ol{
+  width: 100%;
+  margin-left: 40%;
+  height: 30px;
+  @media (min-width:460px) and (max-width: 999px) {
+    width: 50%;
+    margin-left: 43%;
+    height: 30px;
+  }
+  @media (min-width: 1000px) {
+    width: 50%;
+    margin-left: 46%;
+    height: 30px;
+  }
+}
+.dots li{
+  float: left;
+  margin: 0 10px 0 10px;
+  width: 5%;
+  font-size: 40px;
+  height: 20px;
+  color: #686868;
+  list-style: disc;
+  @media (min-width:460px) and (max-width: 999px) {
+    float: left;
+    margin: 0 10px 0 10px;
+    width: 5%;
+    font-size: 40px;
+    height: 20px;
+    color: #686868;
+    list-style: disc;
+  }
+  @media (min-width: 1000px) {
+    float: left;
+    margin: 0 10px 0 10px;
+    width: 5%;
+    font-size: 40px;
+    height: 20px;
+    color: #686868;
+    list-style: disc;
+  }
+}

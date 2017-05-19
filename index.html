@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 9</title>
+    <!-- TEXT FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- END TEXT FONTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($) {
+            //zresetuj scrolla
+            $.scrollTo(0);
+
+            $('#link1').click(function() {
+                $.scrollTo($('#aboutme'), 1000);
+            });
+            $('#link2').click(function() {
+                $.scrollTo($('#works'), 1000);
+            });
+            $('#link3').click(function() {
+                $.scrollTo($('#followme'), 1000);
+            });
+            $('#link4').click(function() {
+                $.scrollTo($('#contact'), 1000);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.menubar').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.menubar').addClass('sticky');
+                } else {
+                    $('.menubar').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="headerImg">
+                <div class="headertext">
+                    <div class="text1">
+                        <p>MariaAnna</p>
+                        <p>Photography</p>
+                    </div>
+                    <div class="text2">
+                        <p>See the world through my lens</p>
+                        <div class="border"></div>
+                    </div>
+                    <div class="text3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae commodo tellus. Duis placerat ipsum nequea </p>
+                    </div>
+                </div>
+            </div>
+            <div class="menubar">
+                <div class="menurwd"><i class="fa fa-align-justify"> </i></div>
+                <div class="logo"><img src="img/logo.png"></div>
+                <div class="menusquare">
+                    <ul>
+                        <li class="height"><a href="#" id="link1">ABOUT ME</a></li>
+                        <li class="height"><a href="#" id="link2">WORKS</a></li>
+                        <li class="height"><a href="#" id="link3">FOLLOW ME</a></li>
+                        <li class="height"><a href="#" id="link4">CONTACT ME</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="middle">
+            <div class="aboutme">
+                <div id="aboutme"></div>
+                <p>A LITTLE BIT ABOUT ME</p>
+                <div class="middleborder"></div>
+                <div class="aboutmetext">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dignissim lacus. Donec ut metus laoreet, finibus nisi eu, mollis lectus. Etiam nec luctus est. Nulla sit amet risus lacus. Suspendisse dui mauris, vehicula eget suscipit
+                        ut, dignissim sit amet mi. Etiam gravida aliquet neque, sit amet congue ex mollis in. Duis bibendum</p>
+                </div>
+            </div>
+            <div class="works">
+                <div id="works"></div>
+                <div class="workstekst">
+                    <p>WORKS</p>
+                    <div class="middleborder"></div>
+                </div>
+                <div class="worksimgcontainer">
+
+                    <div class="floatimg1">
+                        <figure class="figurenature">
+                            <img src="img/nature.png" class="aaa">
+                            <figcaption>
+                                <p class="figcaptionup">NATURE</p>
+                                <p class="figcaptiondown">beautiful nature</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="floatimg2">
+                        <figure class="figurenature">
+                            <img src="img/urban.png" class="aab" width="100%">
+                            <figcaption>
+                                <p class="figcaptionup">NATURE</p>
+                                <p class="figcaptiondown">beautiful nature</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                    <div class="floatimg3">
+                        <figure class="figurenature">
+                            <img src="img/people.png" class="abb">
+                            <figcaption>
+                                <p class="figcaptionup">NATURE</p>
+                                <p class="figcaptiondown">beautiful nature</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="floatimg4">
+                        <figure class="figurenature">
+                            <img src="img/wedding.png" class="baa">
+                            <figcaption>
+                                <p class="figcaptionup">NATURE</p>
+                                <p class="figcaptiondown">beautiful nature</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                    <div class="floatimg5">
+                        <figure class="figurenature">
+                            <img src="img/architecture.png" class="bba">
+                            <figcaption>
+                                <p class="figcaptionup">NATURE</p>
+                                <p class="figcaptiondown">beautiful nature</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                    <div class="floatimg6">
+                        <figure class="figurenature">
+                            <img src="img/animals.png" class="bbb">
+                            <figcaption>
+                                <p class="figcaptionup">NATURE</p>
+                                <p class="figcaptiondown">beautiful nature</p>
+                            </figcaption>
+                        </figure>
+
+
+                        <div class="clearboth"></div>
+                    </div>
+                    <div class="loadmore">
+                        <a href="#"><input type="button" value="LOAD MORE"></a>
+                    </div>
+
+                </div>
+                </div>
+                <div class="dotsdiv">
+                    <div class="dotstext">
+                        <p>See the world through my lens</p>
+                        <div class="middleborder"></div>
+                        <div class="dotstextdown">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae commodo tellus. Duis placerat ipsum nequea </p>
+                        </div>
+                    </div>
+                    <div class="dots">
+                      <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ol>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="divforcontainervideo"></div>
+
+                        <div class="containerforvideo">
+                            <span></span>
+                            <h1>></h1>
+                        </div>
+
+                    <p>WATCH MY VIDEO</p>
+                </div>
+
+        </div>
+        <div class="bottom">
+            <div class="followme">
+                <div id="followme"></div>
+                <p>FOLLOW ME</p>
+                <div class="middleborder"></div>
+                <div class="social">
+                  <div class="socialconteiner">
+                    <ul>
+                      <li><i id="pint" class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                      <li><i id="inst" class="fa fa-instagram" aria-hidden="true"></i></li>
+                      <li><i id="twit" class="fa fa-twitter" aria-hidden="true"></i></li>
+                      <li><i id="gplus" class="fa fa-google-plus" aria-hidden="true"></i></li>
+                      <li><i id="tumblr" class="fa fa-tumblr" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <section id="contact">
+              <div class="wrapperr">
+            <div class="contact">
+                <div class="contacttext">
+                    <h1>CONTACT ME</h1>
+                    <div class="middleborder"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="measengebox">
+                    <div class="twoinput">
+                        <input type="text" placeholder="Your Name*">
+                        <input type="text" placeholder="Your E-mail Adress*">
+                    </div>
+                    <div class="textarea"><textarea placeholder="Your Messeange*"></textarea></div>
+                    <div class="buttonandtext"><button type="button">SEND</button>
+                        <p>All fields marked with an asterisk (*) are required</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          </section>
+            <div class="footer">
+                <div class="footertext">
+                    <h3>MariaAnna</h3>
+                    <p>Photography</p>
+                    <div class="footerlegal">
+                        <p>© Copyright 2017 MariaAnna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.menurwd').on('click', function() {
+            $('ul').toggleClass('showing');
+        })
+    </script>
+</body>
+
+</html>
